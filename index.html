@@ -29,8 +29,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#methods">Methods</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Maps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#featured">Featured Maps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">More Maps</a></li>
                         <li class="nav-item"><a class="nav-link" href="#webmap">Web Map</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -46,8 +47,8 @@
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Maps and spatial analyses from a semester of GIS work at Temple University, from census choropleths in Miami-Dade to site selection in Philadelphia and a web map of Temple Japan.</p>
-                        <a class="btn btn-primary btn-xl" href="#portfolio">View the Maps</a>
+                        <p class="text-white-75 mb-5">Fifteen weeks of GIS problem solving at Temple University, from finding a site for a healthy food store in Philadelphia to comparing crime and Airbnb activity across Chicago.</p>
+                        <a class="btn btn-primary btn-xl" href="#featured">See the Featured Maps</a>
                     </div>
                 </div>
             </div>
@@ -59,134 +60,174 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">About This Portfolio</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Peace Amaka Onebunne is a PhD student in communication at Temple University. The work collected here moves from mapping census variables at two geographic scales, through vector overlay for siting a healthy food store, to an interactive web map built with the ArcGIS Maps SDK for JavaScript.</p>
-                        <a class="btn btn-light btn-xl" href="#methods">See the Methods</a>
+                        <p class="text-white-75 mb-4">Peace Amaka Onebunne is a PhD student in communication at Temple University. This course treated GIS as a way to solve problems, and the three maps featured here each answer one: where a new store should go, how to compare districts of different sizes, and how the choice of map units changes what a map shows.</p>
+                        <a class="btn btn-light btn-xl" href="#skills">Skills Learned</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Methods-->
-        <section class="page-section" id="methods">
+        <!-- Skills-->
+        <section class="page-section" id="skills">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Methods</h2>
+                <h2 class="text-center mt-0">Skills Learned</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-table fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Joins and Fields</h3>
-                            <p class="text-muted mb-0">Table joins on tract codes and county names, with calculated density and housing percentages.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-palette fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Classification</h3>
-                            <p class="text-muted mb-0">Graduated colors and unique values for density, housing, and election results.</p>
+                            <div class="mb-2"><i class="bi-compass fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Projection and Joins</h3>
+                            <p class="text-muted mb-0">Projecting layers to local coordinate systems, table joins, and spatial joins of points to polygons.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-bullseye fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Vector Overlay</h3>
-                            <p class="text-muted mb-0">Buffer, Union, Intersect, and Erase in a projected coordinate system to find qualifying sites.</p>
+                            <h3 class="h4 mb-2">Buffer and Overlay</h3>
+                            <p class="text-muted mb-0">Buffer, Union, Intersect, and Erase to apply distance rules and find qualifying areas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-bar-chart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Rates and Classification</h3>
+                            <p class="text-muted mb-0">Calculating area, densities, and percentages, then mapping them with graduated colors.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Web Mapping</h3>
-                            <p class="text-muted mb-0">Point and polygon graphics with popups using the ArcGIS Maps SDK for JavaScript.</p>
+                            <p class="text-muted mb-0">Point and polygon graphics with popups in the ArcGIS Maps SDK for JavaScript.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
+        <!-- Featured maps-->
+        <div id="featured">
+            <section class="page-section bg-light featured-map">
+                <div class="container px-4 px-lg-5">
+                    <h2 class="text-center mt-0">Featured Maps</h2>
+                    <hr class="divider mb-5" />
+                    <div class="row gx-4 gx-lg-5 align-items-center">
+                        <div class="col-lg-7 mb-4 mb-lg-0">
+                            <a href="assets/img/featured/philadelphia.jpg" title="Candidate Areas for a Healthy Food Store in Philadelphia"><img class="img-fluid featured-img" src="assets/img/featured/philadelphia.jpg" alt="Candidate areas for a healthy food store in Philadelphia" /></a>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="map-kicker">Map 1 · Site selection</div>
+                            <h3 class="h2 mb-3">Where Should a Healthy Food Store Go?</h3>
+                            <p class="text-muted">The task was to find land in Philadelphia for a new healthy food store that people could reach and that would not compete with existing healthy food outlets. Qualifying land had to sit inside an Empowerment Zone, within 2,000 feet of a SEPTA subway or Regional Rail station, and outside 1,200 feet of any Farmers Market or Healthy Corner Store. Layering those three rules left eight candidate areas in West and North Philadelphia. Candidate 4 is the largest at about 219.68 acres, so it is the recommended site. The map is a screen, so the next step would be checking the parcels inside Candidate 4 for zoning, ownership, and vacancy.</p>
+                            <h4 class="h6 tools-label">Tools and skills</h4>
+                            <div><span class="tool-badge">Project</span><span class="tool-badge">Buffer (dissolve)</span><span class="tool-badge">Union</span><span class="tool-badge">Intersect</span><span class="tool-badge">Erase</span><span class="tool-badge">Multipart To Singlepart</span><span class="tool-badge">Calculate Geometry</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section featured-map">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-10 text-center mb-4">
+                            <div class="map-kicker">Map 2 · Spatial joins and rates</div>
+                            <h3 class="h2 mb-3">Crime and Visitors Across Chicago</h3>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <a href="assets/img/featured/chicago.jpg" title="Homicide Density and Airbnb Review Density by Chicago Police District"><img class="img-fluid featured-img" src="assets/img/featured/chicago.jpg" alt="Homicide density and Airbnb review density by Chicago police district" /></a>
+                        </div>
+                        <div class="col-lg-7">
+                            <p class="text-muted">Raw counts make large Chicago police districts look busier, simply because they cover more ground. To compare districts fairly, homicide incidents and Airbnb listings were assigned to police districts, and the totals were divided by each district's area in square miles. Homicide density is highest in a small group of central and south-side districts. Airbnb review density clusters along the north and central lakefront, while many western and southern districts fall in the lowest classes. Side by side, the two maps show visitor activity and violence concentrated in different parts of the city.</p>
+                        </div>
+                        <div class="col-lg-4 offset-lg-1">
+                            <h4 class="h6 tools-label mt-0">Tools and skills</h4>
+                            <div><span class="tool-badge">Project (UTM Zone 16N)</span><span class="tool-badge">Spatial Join</span><span class="tool-badge">Summary Statistics</span><span class="tool-badge">Calculate Geometry</span><span class="tool-badge">Field Calculator</span><span class="tool-badge">Graduated Colors</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section bg-light featured-map">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-10 text-center mb-4">
+                            <div class="map-kicker">Map 3 · Scale and census data</div>
+                            <h3 class="h2 mb-3">Same County, Two Different Pictures</h3>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <a href="assets/img/featured/miami.jpg" title="Population Density by Miami-Dade Census Tract and Census Block"><img class="img-fluid featured-img" src="assets/img/featured/miami.jpg" alt="Population density in Miami-Dade by census tract and by census block" /></a>
+                        </div>
+                        <div class="col-lg-7">
+                            <p class="text-muted">Population density in Miami-Dade looks different depending on the units used to measure it. Census data were joined to tract polygons by GEO code, and density was calculated as people per square mile for tracts and then for the much smaller census blocks. The tract map smooths the county into broad zones, while the block map picks up dense pockets and empty blocks that the tracts average away. The pair shows the modifiable areal unit problem, where the size of the units changes the pattern on the map. It also warns against the ecological fallacy, since a dense tract does not mean every resident lives in a crowded block.</p>
+                        </div>
+                        <div class="col-lg-4 offset-lg-1">
+                            <h4 class="h6 tools-label mt-0">Tools and skills</h4>
+                            <div><span class="tool-badge">Table Join</span><span class="tool-badge">Calculate Geometry</span><span class="tool-badge">Field Calculator</span><span class="tool-badge">Graduated Colors</span><span class="tool-badge">Natural Breaks (Jenks)</span><span class="tool-badge">Layouts at Two Scales</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- More maps-->
+        <section class="pt-5 bg-dark" id="portfolio">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="text-white mt-0">More Maps</h2>
+                <hr class="divider" />
+                <p class="text-white-75 mb-5">Other maps from the semester. Click any map to see it full size.</p>
+            </div>
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Candidate Areas for a Healthy Food Store in Philadelphia">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="Candidate areas for a healthy food store in Philadelphia" />
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/9.jpg" title="Hispanic Share of State Population, 2010">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/9.jpg" alt="Hispanic Share of State Population, 2010" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Site Selection</div>
-                                <div class="project-name">Healthy Food Store Candidates</div>
+                                <div class="project-category text-white-50">Thematic Mapping</div>
+                                <div class="project-name">Hispanic Share by State</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Areas Meeting Transit and Empowerment Zone Criteria">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="Transit buffers and Empowerment Zones in Philadelphia" />
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/8.jpg" title="2020 Presidential Vote by Pennsylvania County">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/8.jpg" alt="2020 Presidential Vote by Pennsylvania County" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Site Selection</div>
-                                <div class="project-name">Transit and Empowerment Zones</div>
+                                <div class="project-category text-white-50">Election Mapping</div>
+                                <div class="project-name">2020 Vote by County</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Philadelphia Healthy Food Access Data">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="Stations, markets, and corner stores in Philadelphia" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Site Selection</div>
-                                <div class="project-name">Food Access Data</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Population Density by Miami-Dade Census Tract">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="Population density by census tract in Miami-Dade" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Census Mapping</div>
-                                <div class="project-name">Tract Population Density</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Population Density by Miami-Dade Census Block">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="Population density by census block in Miami-Dade" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Census Mapping</div>
-                                <div class="project-name">Block Population Density</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Percent of Housing Units Vacant by Miami-Dade Census Tract">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="Vacant housing by census tract in Miami-Dade" />
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="Percent of Housing Units Vacant by Miami-Dade Census Tract" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Census Mapping</div>
                                 <div class="project-name">Vacant Housing</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/7.jpg" title="Percent of Housing Units Occupied by Miami-Dade Census Tract">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/7.jpg" alt="Occupied housing by census tract in Miami-Dade" />
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/7.jpg" alt="Percent of Housing Units Occupied by Miami-Dade Census Tract" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Census Mapping</div>
                                 <div class="project-name">Occupied Housing</div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/8.jpg" title="2020 Presidential Vote by Pennsylvania County">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/8.jpg" alt="2020 presidential vote by Pennsylvania county" />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Election Mapping</div>
-                                <div class="project-name">2020 Vote by County</div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Areas Meeting Transit and Empowerment Zone Criteria">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="Areas Meeting Transit and Empowerment Zone Criteria" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Site Selection</div>
+                                <div class="project-name">Transit and Empowerment Zones</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Philadelphia Healthy Food Access Data">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="Philadelphia Healthy Food Access Data" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Site Selection</div>
+                                <div class="project-name">Food Access Data</div>
                             </div>
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Featured analysis-->
-        <section class="page-section bg-dark text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Featured Analysis: Siting a Healthy Food Store</h2>
-                <p class="text-white-75 method-text mb-4">Qualifying areas sit inside a Philadelphia Empowerment Zone, within 2,000 feet of a SEPTA subway or Regional Rail station, and outside 1,200-foot buffers around Farmers Markets and Healthy Corner Stores. Eight candidate polygons remained after the overlay, and Candidate 4, at about 219.68 acres, is the largest contiguous area and the recommended site.</p>
-                <a class="btn btn-light btn-xl" href="assets/img/portfolio/fullsize/1.jpg">Open the Final Map</a>
             </div>
         </section>
         <!-- Web map-->
@@ -230,6 +271,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>window.addEventListener("DOMContentLoaded", () => { new SimpleLightbox({ elements: ".featured-map a" }); });</script>
         <!-- ArcGIS Maps SDK and the web map-->
         <script type="module" src="https://js.arcgis.com/5.2/"></script>
         <script type="module" src="js/map.js"></script>
