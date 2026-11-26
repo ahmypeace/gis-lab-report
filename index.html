@@ -47,7 +47,7 @@
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Fifteen weeks of GIS problem solving at Temple University, from finding a site for a healthy food store in Philadelphia to comparing crime and Airbnb activity across Chicago.</p>
+                        <p class="text-white-75 mb-5">Fifteen weeks of GIS problem solving at Temple University, from drinking-water risk in Flint to schools near landfills in Los Angeles and a site for a healthy food store in Philadelphia.</p>
                         <a class="btn btn-primary btn-xl" href="#featured">See the Featured Maps</a>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">About This Portfolio</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Peace Amaka Onebunne is a PhD student in communication at Temple University. This course treated GIS as a way to solve problems, and the three maps featured here each answer one: where a new store should go, how to compare districts of different sizes, and how the choice of map units changes what a map shows.</p>
+                        <p class="text-white-75 mb-4">Peace Amaka Onebunne is a PhD student in communication at Temple University. This course treated GIS as a way to solve problems, and the three featured maps each ask where people face an environmental or access problem and where action should go first.</p>
                         <a class="btn btn-light btn-xl" href="#skills">Skills Learned</a>
                     </div>
                 </div>
@@ -72,28 +72,35 @@
                 <h2 class="text-center mt-0">Skills Learned</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-compass fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Projection and Joins</h3>
-                            <p class="text-muted mb-0">Projecting layers to local coordinate systems, table joins, and spatial joins of points to polygons.</p>
+                            <h3 class="h4 mb-2">Projections</h3>
+                            <p class="text-muted mb-0">Checking coordinate systems, Define Projection, and Project before measuring distance or area.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-funnel fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Selection Queries</h3>
+                            <p class="text-muted mb-0">Select By Attributes and Select By Location to narrow features step by step.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-bullseye fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Buffer and Overlay</h3>
                             <p class="text-muted mb-0">Buffer, Union, Intersect, and Erase to apply distance rules and find qualifying areas.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-bar-chart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Rates and Classification</h3>
-                            <p class="text-muted mb-0">Calculating area, densities, and percentages, then mapping them with graduated colors.</p>
+                            <h3 class="h4 mb-2">Joins and Rates</h3>
+                            <p class="text-muted mb-0">Table and spatial joins, area, densities, and percentages mapped with graduated colors.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 text-center">
+                    <div class="col-lg col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Web Mapping</h3>
@@ -105,60 +112,52 @@
         </section>
         <!-- Featured maps-->
         <div id="featured">
-            <section class="page-section bg-light featured-map">
+            <section class="page-section featured-map bg-light">
                 <div class="container px-4 px-lg-5">
                     <h2 class="text-center mt-0">Featured Maps</h2>
                     <hr class="divider mb-5" />
                     <div class="row gx-4 gx-lg-5 align-items-center">
                         <div class="col-lg-7 mb-4 mb-lg-0">
-                            <a href="assets/img/featured/philadelphia.jpg" title="Candidate Areas for a Healthy Food Store in Philadelphia"><img class="img-fluid featured-img" src="assets/img/featured/philadelphia.jpg" alt="Candidate areas for a healthy food store in Philadelphia" /></a>
+                            <a href="assets/img/featured/flint.jpg" title="Areas Meeting All Three Flint Drinking-Water Risk Criteria"><img class="img-fluid featured-img" src="assets/img/featured/flint.jpg" alt="Areas Meeting All Three Flint Drinking-Water Risk Criteria" /></a>
                         </div>
                         <div class="col-lg-5">
-                            <div class="map-kicker">Map 1 · Site selection</div>
-                            <h3 class="h2 mb-3">Where Should a Healthy Food Store Go?</h3>
-                            <p class="text-muted">The task was to find land in Philadelphia for a new healthy food store that people could reach and that would not compete with existing healthy food outlets. Qualifying land had to sit inside an Empowerment Zone, within 2,000 feet of a SEPTA subway or Regional Rail station, and outside 1,200 feet of any Farmers Market or Healthy Corner Store. Layering those three rules left eight candidate areas in West and North Philadelphia. Candidate 4 is the largest at about 219.68 acres, so it is the recommended site. The map is a screen, so the next step would be checking the parcels inside Candidate 4 for zoning, ownership, and vacancy.</p>
+                            <div class="map-kicker">Map 1 · Environmental risk</div>
+                            <h3 class="h2 mb-3">Who Is Most at Risk From Flint's Tap Water?</h3>
+                            <p class="text-muted">The question was where in Flint people are most at risk of drinking contaminated tap water. The analysis looked for places where three risks overlap: within 0.3 miles of a TRI facility releasing more than 10,000 tons of water pollution, within 0.3 miles of a river, and within 0.2 miles of a service line made of lead. Buffering each layer and intersecting the three results left a few areas that meet all three conditions. Four wards contain these areas, and Ward 5 holds the most, about 4.6 million square feet, so it should be screened first. The map shows where the risks overlap, not how many residents are exposed, so population data and water testing would be the next step.</p>
                             <h4 class="h6 tools-label">Tools and skills</h4>
-                            <div><span class="tool-badge">Project</span><span class="tool-badge">Buffer (dissolve)</span><span class="tool-badge">Union</span><span class="tool-badge">Intersect</span><span class="tool-badge">Erase</span><span class="tool-badge">Multipart To Singlepart</span><span class="tool-badge">Calculate Geometry</span></div>
+                            <div><span class="tool-badge">Table Join</span><span class="tool-badge">Select By Attributes</span><span class="tool-badge">Project (StatePlane Michigan South)</span><span class="tool-badge">Buffer (dissolve all)</span><span class="tool-badge">Intersect</span><span class="tool-badge">Calculate Geometry</span><span class="tool-badge">Summary Statistics</span></div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="page-section featured-map">
                 <div class="container px-4 px-lg-5">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-lg-10 text-center mb-4">
-                            <div class="map-kicker">Map 2 · Spatial joins and rates</div>
-                            <h3 class="h2 mb-3">Crime and Visitors Across Chicago</h3>
+                    <div class="row gx-4 gx-lg-5 align-items-center">
+                        <div class="col-lg-5 order-lg-2 mb-4 mb-lg-0">
+                            <a href="assets/img/featured/la-landfills.jpg" title="Lower-Income Census Tracts with Schools Near Methane-Producing Landfills"><img class="img-fluid featured-img" src="assets/img/featured/la-landfills.jpg" alt="Lower-Income Census Tracts with Schools Near Methane-Producing Landfills" /></a>
                         </div>
-                        <div class="col-12 mb-4">
-                            <a href="assets/img/featured/chicago.jpg" title="Homicide Density and Airbnb Review Density by Chicago Police District"><img class="img-fluid featured-img" src="assets/img/featured/chicago.jpg" alt="Homicide density and Airbnb review density by Chicago police district" /></a>
-                        </div>
-                        <div class="col-lg-7">
-                            <p class="text-muted">Raw counts make large Chicago police districts look busier, simply because they cover more ground. To compare districts fairly, homicide incidents and Airbnb listings were assigned to police districts, and the totals were divided by each district's area in square miles. Homicide density is highest in a small group of central and south-side districts. Airbnb review density clusters along the north and central lakefront, while many western and southern districts fall in the lowest classes. Side by side, the two maps show visitor activity and violence concentrated in different parts of the city.</p>
-                        </div>
-                        <div class="col-lg-4 offset-lg-1">
-                            <h4 class="h6 tools-label mt-0">Tools and skills</h4>
-                            <div><span class="tool-badge">Project (UTM Zone 16N)</span><span class="tool-badge">Spatial Join</span><span class="tool-badge">Summary Statistics</span><span class="tool-badge">Calculate Geometry</span><span class="tool-badge">Field Calculator</span><span class="tool-badge">Graduated Colors</span></div>
+                        <div class="col-lg-7 order-lg-1">
+                            <div class="map-kicker">Map 2 · Environmental justice</div>
+                            <h3 class="h2 mb-3">Schools Near Landfills in Los Angeles</h3>
+                            <p class="text-muted">The question was which lower-income neighborhoods in Los Angeles have schools close to methane-producing landfills. Of 811 schools in the city, 53 sit within 0.5 km of a landfill, and those schools fall in 29 census tracts. Splitting the tracts at their median income per capita of $23,674 left 14 lower-income tracts, all in Supervisorial Districts 1 and 2, with 29 schools and 19 nearby landfills. The result went into a letter to the First District Supervisor asking for air-quality monitoring and closer review of these sites. The map does not show that harm has occurred, but it points to places where children spend their days near a known hazard.</p>
+                            <h4 class="h6 tools-label">Tools and skills</h4>
+                            <div><span class="tool-badge">Select By Attributes</span><span class="tool-badge">Select By Location</span><span class="tool-badge">Within a Distance</span><span class="tool-badge">Export Features</span><span class="tool-badge">Median Split</span><span class="tool-badge">Map Layout</span></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="page-section bg-light featured-map">
+            <section class="page-section featured-map bg-light">
                 <div class="container px-4 px-lg-5">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-lg-10 text-center mb-4">
-                            <div class="map-kicker">Map 3 · Scale and census data</div>
-                            <h3 class="h2 mb-3">Same County, Two Different Pictures</h3>
+                    <div class="row gx-4 gx-lg-5 align-items-center">
+                        <div class="col-lg-7 mb-4 mb-lg-0">
+                            <a href="assets/img/featured/philadelphia.jpg" title="Candidate Areas for a Healthy Food Store in Philadelphia"><img class="img-fluid featured-img" src="assets/img/featured/philadelphia.jpg" alt="Candidate Areas for a Healthy Food Store in Philadelphia" /></a>
                         </div>
-                        <div class="col-12 mb-4">
-                            <a href="assets/img/featured/miami.jpg" title="Population Density by Miami-Dade Census Tract and Census Block"><img class="img-fluid featured-img" src="assets/img/featured/miami.jpg" alt="Population density in Miami-Dade by census tract and by census block" /></a>
-                        </div>
-                        <div class="col-lg-7">
-                            <p class="text-muted">Population density in Miami-Dade looks different depending on the units used to measure it. Census data were joined to tract polygons by GEO code, and density was calculated as people per square mile for tracts and then for the much smaller census blocks. The tract map smooths the county into broad zones, while the block map picks up dense pockets and empty blocks that the tracts average away. The pair shows the modifiable areal unit problem, where the size of the units changes the pattern on the map. It also warns against the ecological fallacy, since a dense tract does not mean every resident lives in a crowded block.</p>
-                        </div>
-                        <div class="col-lg-4 offset-lg-1">
-                            <h4 class="h6 tools-label mt-0">Tools and skills</h4>
-                            <div><span class="tool-badge">Table Join</span><span class="tool-badge">Calculate Geometry</span><span class="tool-badge">Field Calculator</span><span class="tool-badge">Graduated Colors</span><span class="tool-badge">Natural Breaks (Jenks)</span><span class="tool-badge">Layouts at Two Scales</span></div>
+                        <div class="col-lg-5">
+                            <div class="map-kicker">Map 3 · Site selection</div>
+                            <h3 class="h2 mb-3">Where Should a Healthy Food Store Go?</h3>
+                            <p class="text-muted">The task was to find land in Philadelphia for a new healthy food store that people could reach and that would not compete with existing healthy food outlets. Qualifying land had to sit inside an Empowerment Zone, within 2,000 feet of a SEPTA subway or Regional Rail station, and outside 1,200 feet of any Farmers Market or Healthy Corner Store. Layering those three rules left eight candidate areas in West and North Philadelphia. Candidate 4 is the largest at about 219.68 acres, so it is the recommended site. The map is a screen, so the next step would be checking the parcels inside Candidate 4 for zoning, ownership, and vacancy.</p>
+                            <h4 class="h6 tools-label">Tools and skills</h4>
+                            <div><span class="tool-badge">Project</span><span class="tool-badge">Buffer (dissolve)</span><span class="tool-badge">Union</span><span class="tool-badge">Intersect</span><span class="tool-badge">Erase</span><span class="tool-badge">Multipart To Singlepart</span><span class="tool-badge">Calculate Geometry</span></div>
                         </div>
                     </div>
                 </div>
@@ -174,11 +173,47 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/10.jpg" title="Homicide Density by Chicago Police District">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/10.jpg" alt="Homicide Density by Chicago Police District" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Spatial Joins and Rates</div>
+                                <div class="project-name">Chicago Homicide Density</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/11.jpg" title="Airbnb Review Density by Chicago Police District">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/11.jpg" alt="Airbnb Review Density by Chicago Police District" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Spatial Joins and Rates</div>
+                                <div class="project-name">Chicago Airbnb Reviews</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/9.jpg" title="Hispanic Share of State Population, 2010">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/9.jpg" alt="Hispanic Share of State Population, 2010" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Thematic Mapping</div>
                                 <div class="project-name">Hispanic Share by State</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Population Density by Miami-Dade Census Tract">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="Population Density by Miami-Dade Census Tract" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Census Mapping</div>
+                                <div class="project-name">Miami-Dade Tract Density</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Population Density by Miami-Dade Census Block">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="Population Density by Miami-Dade Census Block" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Census Mapping</div>
+                                <div class="project-name">Miami-Dade Block Density</div>
                             </div>
                         </a>
                     </div>
@@ -192,20 +227,20 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Percent of Housing Units Vacant by Miami-Dade Census Tract">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="Percent of Housing Units Vacant by Miami-Dade Census Tract" />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/13.jpg" title="Four Ways to Map the World">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/13.jpg" alt="Four Ways to Map the World" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Census Mapping</div>
-                                <div class="project-name">Vacant Housing</div>
+                                <div class="project-category text-white-50">Projections</div>
+                                <div class="project-name">World Map Projections</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/7.jpg" title="Percent of Housing Units Occupied by Miami-Dade Census Tract">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/7.jpg" alt="Percent of Housing Units Occupied by Miami-Dade Census Tract" />
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/12.jpg" title="Wealthiest Census Tract Containing a Methane-Producing Landfill">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/12.jpg" alt="Wealthiest Census Tract Containing a Methane-Producing Landfill" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Census Mapping</div>
-                                <div class="project-name">Occupied Housing</div>
+                                <div class="project-category text-white-50">Selection Queries</div>
+                                <div class="project-name">Wealthiest Landfill Tract</div>
                             </div>
                         </a>
                     </div>
@@ -215,15 +250,6 @@
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Site Selection</div>
                                 <div class="project-name">Transit and Empowerment Zones</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Philadelphia Healthy Food Access Data">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="Philadelphia Healthy Food Access Data" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Site Selection</div>
-                                <div class="project-name">Food Access Data</div>
                             </div>
                         </a>
                     </div>
