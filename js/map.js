@@ -1,6 +1,6 @@
 // Temple University Japan web map
-// Paste your ArcGIS API key between the quotation marks below.
-const API_KEY = "PASTE_YOUR_API_KEY_HERE";
+// Paste ArcGIS API key between the quotation marks below.
+const API_KEY = "AAPTao6CBftfHHKmki2rklKRV6Q..jL2VhcNXYo84cSrenRNMv996oG87FauSEuImDDiVqieGIQEIHE-NOTijx6wTzqaC8zfZvhtuiCPG9rrR6LayVBQhRebzri42XzAHc9N_QwTyec_ODJg0nUUtGyBwywTWzhz_rZQecy7KpUzlcr96qr333cNkK4_UYCH6BNTu6yoAv9ekoDAjqr-8N-p_b8zvMYMXKll65fN9A_0e7CMG5trwB_HGQ9qvDrsn0X0QUUXCO2m2gKOrgT-3bg..AT1_i2BzHJi1";
 
 const frame = document.getElementById("webmap-frame");
 
