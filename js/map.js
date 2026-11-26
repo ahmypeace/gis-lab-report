@@ -4,7 +4,12 @@ const API_KEY = "AAPTao6CBftfHHKmki2rklKRV6Q..jL2VhcNXYo84cSrenRNMv996oG87FauSEu
 
 const frame = document.getElementById("webmap-frame");
 
-// Without a key, show a picture of the map so the section is never blank
+// Wait until the ArcGIS library has loaded (up to 10 seconds)
+for (let i = 0; i < 100 && typeof $arcgis === "undefined"; i++) {
+  await new Promise((r) => setTimeout(r, 100));
+}
+
+// Without a key or the library, show a picture of the map so the section is never blank
 if (API_KEY === "PASTE_YOUR_API_KEY_HERE" || typeof $arcgis === "undefined") {
   frame.innerHTML = '<img src="assets/img/temple-japan-map.png" alt="Temple University Japan web map">';
 } else {
